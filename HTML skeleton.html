@@ -8,19 +8,23 @@
 <body>
   <script>
 
-    // Your JavaScript goes here!
+
     console.log("Starting up code")
 
-    //ask user for number
-    //let number = prompt("please enter a number")
+//ask user for number and add 7 to it
+//let number = prompt("please enter a number")
 
     let number = 10
 
     function add7(number){
       document.write(number)
-      document.write("\n Running add7 function")
-      document.write(Number(number)+7)              
+      document.write("\n \n \n Running add7 function" + "\n")
+      document.write(Number(number)+7 + "\n \n")              
       }
+
+      add7(number)
+
+
 
 //function takes 2 numbers and multiples them
 
@@ -28,14 +32,15 @@ let num1 = 3
 let num2 = 10
 
     function multiply(num1,num2){
-     
+      document.write("Multiply function is running ")
+
       let result = console.log(num1+num2)
       //let result = console.log(Number(num1)+Number(num2))
-      document.write(num1+num2)
+      document.write(num1*num2)
       
-      document.write("Multiple function ran")
+      document.write(" Multiple function ran")
     }                  
-console.log("Running multiply function")
+console.log(" Running multiply function")
   multiply(num1,num2)
 
 
@@ -48,7 +53,7 @@ console.log("Running multiply function")
 
 
 
-add7(number)
+
 
 console.log("  Done  ")
 
