@@ -47,6 +47,15 @@ console.log(" Running multiply function")
 
 //function with capitalize tring and return with only first letter capitalized
    // function capitalize()
+    let userWord = "pineapple"
+
+    function capitalizer(userWord){
+      console.log(" RAN capitalizer")
+      return userWord.chartAt(0).toUpperCase() + userWord.slice(1)
+
+    }
+    console.log("Running capitalizer")
+    capitalizer(userWord)
 
 //takes string and returns the last letter of the string
    // function lastLetter()
