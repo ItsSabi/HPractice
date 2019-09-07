@@ -64,13 +64,17 @@ console.log(" Running multiply function")
     let lastLetter = "television"
 
     function lastLeg(lastLetter){
-      console.log("Running last letter capitalizer")
+      console.log("RAN letter capitalizer")
 
-      
+      let wLength= lastLetter.length()
+      let lastLeg = lastLetter.slice(wLength)  +  lastLetter.charAt(wLength)
+
+      console.log(lastLeg)
 
     }
 
-
+    console.log("Running Last Letter Capitzalizer")
+    lastLeg(lastLetter)
 
 console.log("  Done  ")
 
