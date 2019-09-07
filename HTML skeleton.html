@@ -7,23 +7,25 @@
 </head>
 <body>
   <script>
+//Starting the Javascript code here with a few different practice functions
+//Will change to ask for User input instead of set words.
 
 
-    console.log("Starting up code")
+
+console.log("Starting up code")
 
 //ask user for number and add 7 to it
 //let number = prompt("please enter a number")
 
-    let number = 10
+let number = 10
 
-    function add7(number){
+function add7(number){
       document.write(number)
       document.write("\n \n \n Running add7 function" + "\n")
       document.write(Number(number)+7 + "\n \n")              
-      }
-
-      add7(number)
-
+                     }
+console.log("Running add7 function")
+add7(number)
 
 
 //function takes 2 numbers and multiples them
@@ -31,55 +33,53 @@
 let num1 = 5
 let num2 = 10
 
-    function multiply(num1,num2){
+function multiply(num1,num2){
       document.write(" \n Multiply function is running ")
 
       let result = console.log(num1+num2)
       //let result = console.log(Number(num1)+Number(num2))
       document.write(num1*num2)
-    
       document.write(" Multiple function ran")
-    }                  
-console.log(" Running multiply function")
-  multiply(num1,num2)
+                            }                  
 
+console.log(" Running multiply function")
+multiply(num1,num2)
 
 
 //function with capitalize tring and return with only first letter capitalized
 // function capitalize()
-    let userWord = "pineapple"
+let userWord = "pineapple"
 
-    function capitalizer(userWord){
-      console.log(" RAN capitalizer")
+function capitalizer(userWord){
+    console.log(" RAN capitalizer")
 
-     //Taking the first letter replacing it with a capitalized version, then adding the rest of the letters
-     let newWord = userWord.charAt(0).toUpperCase() + userWord.slice(1)
-      console.log(newWord)
-    }
+    //Taking the first letter replacing it with a capitalized version, then adding the rest of the letters
+    let newWord = userWord.charAt(0).toUpperCase() + userWord.slice(1)
+    console.log(newWord)
+                              }
 
-    console.log("Running capitalizer")
-    capitalizer(userWord)
+console.log("Running capitalizer")
+capitalizer(userWord)
 
 //takes string and returns the last letter of the string
 // function lastLetter()
 
-    let lastLetter = "television"
+let lastLetter = "television"
 
-    function lastLeg(lastLetter){
-      console.log("RAN letter capitalizer")
+function lastLeg(lastLetter){
+    console.log("RAN letter capitalizer")
 
-      //finding the length of the word so we can extract the last letter
-      let wLength= lastLetter.length
+    //finding the length of the word so we can extract the last letter
+    let wLength= lastLetter.length
 
-      //Slicing off the final letter of the word, then replacing the final letter with a Capitalized letter
-      let lastLeg = lastLetter.slice(0, wLength-1)  +  lastLetter.charAt(wLength-1).toUpperCase()
-
-      console.log(lastLeg)
-      console.log("Test last letter function")
+    //Slicing off the final letter of the word, then replacing the final letter with a Capitalized letter
+    let lastLeg = lastLetter.slice(0, wLength-1)  +  lastLetter.charAt(wLength-1).toUpperCase()
+    console.log(lastLeg)
+    console.log("Test last letter function")
     }
 
-    console.log("Running Last Letter Capitzalizer")
-    lastLeg(lastLetter)
+console.log("Running Last Letter Capitzalizer")
+lastLeg(lastLetter)
 
 console.log("  Done  ")
 
