@@ -46,11 +46,13 @@ console.log(" Running multiply function")
 
 
 //function with capitalize tring and return with only first letter capitalized
-   // function capitalize()
+// function capitalize()
     let userWord = "pineapple"
 
     function capitalizer(userWord){
       console.log(" RAN capitalizer")
+
+     //Taking the first letter replacing it with a capitalized version, then adding the rest of the letters
      let newWord = userWord.charAt(0).toUpperCase() + userWord.slice(1)
       console.log(newWord)
     }
@@ -59,18 +61,21 @@ console.log(" Running multiply function")
     capitalizer(userWord)
 
 //takes string and returns the last letter of the string
-   // function lastLetter()
+// function lastLetter()
 
     let lastLetter = "television"
 
     function lastLeg(lastLetter){
       console.log("RAN letter capitalizer")
 
-      let wLength= lastLetter.length()
-      let lastLeg = lastLetter.slice(wLength)  +  lastLetter.charAt(wLength)
+      //finding the length of the word so we can extract the last letter
+      let wLength= lastLetter.length
+
+      //Slicing off the final letter of the word, then replacing the final letter with a Capitalized letter
+      let lastLeg = lastLetter.slice(0, wLength-1)  +  lastLetter.charAt(wLength-1).toUpperCase()
 
       console.log(lastLeg)
-
+      console.log("Test last letter function")
     }
 
     console.log("Running Last Letter Capitzalizer")
